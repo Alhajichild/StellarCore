@@ -6,9 +6,9 @@
     "node": "22.x"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "eslint .",
     "postinstall": "prisma generate",
     "test": "tsx scripts/run-tests.ts",
@@ -27,6 +27,7 @@
     "benchmark:latest-observations": "tsx scripts/benchmark-latest-observations.ts",
     "bootstrap:registry": "tsx scripts/bootstrap-registry.ts",
     "stamp:environment": "tsx scripts/stamp-database-environment.ts",
+    "suppression:reactivate": "tsx scripts/reactivate-scheduled-source.ts",
     "release:manifest": "tsx scripts/release-cli.ts generate",
     "verify:release": "tsx scripts/release-cli.ts verify"
   },

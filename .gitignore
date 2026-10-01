@@ -48,3 +48,6 @@ issues-to-create*.json
 
 # Release artifacts (#142)
 /dist-release/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
